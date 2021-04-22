@@ -12,6 +12,10 @@
   color: #171717;
 }
 
+div {
+  display: flex;
+}
+
 a:-webkit-any-link {
   cursor: pointer;
 }
@@ -91,4 +95,16 @@ h1 {
 .navlink-selected {
   text-decoration: underline !important;
   opacity: 1 !important;
+}
+
+/* ------------- */
+/* Contents */
+.page-title {
+  min-height: 100vh;
+  height: auto;
+  width: 100%;
+  flex-direction: column;
+  text-align: center;
+  overflow: hidden;
+  background-color: #57A0D3;
 }
