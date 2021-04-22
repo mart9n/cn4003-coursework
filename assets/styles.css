@@ -2,21 +2,25 @@
 
 /* Set global styles */
 * {
+  box-sizing: border-box;
+}
+
+:root, body {
   margin: 0;
-  padding: 0;
+  display: flex;
   min-width: 100%;
   min-height: 100%;
-  box-sizing: border-box;
-  flex-grow: 1;
-  flex-shrink: 1;
-  flex-basis: 0%;
-  flex-direction: column;
+  background-color: #B0DFE5;
+}
+
+body {
   font-size: 20px;
+  line-height: 24px;
   font-family: 'Catamaran', sans-serif;
-  color: #171717;
 }
 
 div {
+  flex-direction: column;
   display: flex;
 }
 
@@ -27,6 +31,11 @@ a:-webkit-any-link {
 h1 {
   line-height: 60px;
   font-size: 60px;
+}
+
+.main {
+  flex: 1 1 0%;
+  flex-direction: column;
 }
 
 /* ------------ */
@@ -55,16 +64,22 @@ h1 {
     backdrop-filter 0.2s ease 0s;
   position: fixed;
   top: 0px;
+  justify-content: center;
 
 }
 
 .navbar {
   height: 60px;
-  max-width: 90%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+}
+
+.navbar-padding {
+  width: 95%;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .navbar-logo {
