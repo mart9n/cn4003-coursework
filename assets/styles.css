@@ -2,6 +2,8 @@
 
 /* Set global styles */
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
   flex-grow: 1;
   flex-shrink: 1;
@@ -99,7 +101,7 @@ h1 {
 
 /* ------------- */
 /* Contents */
-.page-title {
+.content {
   min-height: 100vh;
   height: auto;
   width: 100%;
@@ -107,4 +109,8 @@ h1 {
   text-align: center;
   overflow: hidden;
   background-color: #57A0D3;
+}
+
+.page-title {
+  margin: 80px;
 }
