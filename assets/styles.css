@@ -45,6 +45,7 @@ a:-webkit-any-link {
 }
 
 .navbar {
+  height: 60px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
