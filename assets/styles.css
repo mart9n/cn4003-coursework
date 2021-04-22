@@ -53,6 +53,7 @@
   color: inherit;
   font-weight: 400;
   font-size: 0.8em;
+  text-decoration: none;
   transition: opacity 0.1s ease 0s;
 }
 
@@ -63,7 +64,10 @@
   color: inherit;
   font-weight: 400;
   font-size: 0.8em;
+  text-decoration: none;
 }
 
 .navlink-selected {
+  text-decoration: underline !important;
+  opacity: 1 !important;
 }
