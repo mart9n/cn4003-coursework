@@ -2,6 +2,7 @@
 
 /* Set global styles */
 * {
+  box-sizing: border-box;
   flex-grow: 1;
   flex-shrink: 1;
   flex-basis: 0%;
@@ -11,12 +12,21 @@
   color: #171717;
 }
 
+a:-webkit-any-link {
+  cursor: pointer;
+}
+
 /* Reusable variables */
 .rightMargin20 {
   margin-right: -20px;
 }
 
 /* Navigation */
+.logo {
+  height: 35px;
+  vertical-align: middle;
+}
+
 .navigation {
   z-index: 200;
   width: 100%;
@@ -39,6 +49,10 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+}
+
+.navbar-logo {
+  text-decoration: none;
 }
 
 .navbar-links {
