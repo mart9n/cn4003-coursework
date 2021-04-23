@@ -1,11 +1,10 @@
-console.log('hello world');
-
+// Script to change background-color of navigation on scroll
 const navigation = document.querySelector('.navigation');
 
 window.onscroll = () => {
 	if (window.scrollY > 50) {
-    navbar.classList.add('navigation-scrolled');
+    navigation.classList.add('navigation-scrolled');
   } else {
-    navbar.classList.remove('navigation-scrolled');
+    navigation.classList.remove('navigation-scrolled');
   }
 };
