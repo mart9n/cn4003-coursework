@@ -196,6 +196,7 @@ h1 {
 
 .bike-wall {
   max-width: 1296px;
+  width: 80%;
   align-self: center;
   border-radius: 10px;
 }
