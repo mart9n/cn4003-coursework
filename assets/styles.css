@@ -17,6 +17,7 @@ body {
   font-size: 20px;
   line-height: 24px;
   font-family: 'Catamaran', sans-serif;
+  color: white;
 }
 
 div {
@@ -31,6 +32,7 @@ a:-webkit-any-link {
 h1 {
   line-height: 60px;
   font-size: 60px;
+  font-weight: bold;
 }
 
 .main {
