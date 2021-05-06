@@ -1,12 +1,10 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>GeoDo Bicycles</title>
-    <link rel="stylesheet" href="/cn4003-coursework/assets/styles.css">
-    <link rel="stylesheet" href="./assets/styles.css">
-    <link rel="icon" type="image/png" href="/cn4003-coursework/assets/favicon.png">
-
+    <link rel="stylesheet" href="./assets/styles.css" />
+    <link rel="icon" type="image/png" href="./assets/favicon.png" />
   </head>
   <body>
     <div class="main">
@@ -14,66 +12,106 @@
         <div class="centerise">
           <div class="navbar">
             <div class="navbar-logo">
-              <a target="_self" style="text-decoration: none;" href="/cn4003-coursework/">
-                <svg height="35" viewBox="0 0 100 61" fill="#fff" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M100 30.5C100.002 40.5513 95.0431 49.946 86.7695 55.5645C78.4958 61.183 67.9905 62.2901 58.7417 58.518C61.1912 55.9731 63.2956 53.1128 65 50.0116C73.0955 52.1093 81.6321 48.9141 86.4037 42.0005C91.1753 35.0868 91.1753 25.9131 86.4037 18.9995C81.6321 12.0858 73.0955 8.89069 65 10.9884C63.2947 7.88705 61.1894 5.02674 58.7389 2.48196C67.988 -1.29129 78.4943 -0.184868 86.7687 5.43382C95.0431 11.0525 100.003 20.4479 100 30.5Z" />
-                  <path d="M80 30.5C80 36.0634 75.5228 40.5734 70 40.5734C69.5849 40.5743 69.1701 40.5481 68.7583 40.495C69.1727 38.8638 69.4835 37.2077 69.6889 35.5367C69.7944 34.7028 69.8722 33.8634 69.9222 33.0183H70C71.3807 33.0183 72.5 31.8908 72.5 30.5C72.5 29.1091 71.3807 27.9816 70 27.9816H69.9222C69.8722 27.1347 69.7944 26.2953 69.6889 25.4633C69.4835 23.7923 69.1727 22.1362 68.7583 20.5049C69.1701 20.4519 69.5849 20.4257 70 20.4266C75.5228 20.4266 80 24.9366 80 30.5Z" />
-                  <path d="M60 30.5C59.9914 43.7772 51.3755 55.4914 38.7688 59.3662C26.1621 63.2409 12.5218 58.3672 5.15656 47.3564C-2.20872 36.3456 -1.57128 21.7806 6.72733 11.4655C15.0259 1.15034 29.039 -2.49529 41.2583 2.48196C38.8088 5.02691 36.7044 7.88721 35 10.9884C26.9045 8.89069 18.3679 12.0858 13.5963 18.9995C8.82467 25.9131 8.82467 35.0868 13.5963 42.0005C18.3679 48.9141 26.9045 52.1093 35 50.0116C42.0437 48.1729 47.5442 42.6321 49.3694 35.5367H30.3111C30.2056 34.7028 30.1278 33.8634 30.0778 33.0183C30.0278 32.1733 30.0019 31.3338 30 30.5C30 29.6549 30.0259 28.8155 30.0778 27.9816C30.1296 27.1478 30.2074 26.3083 30.3111 25.4633H59.5833C59.8618 27.1275 60.0011 28.8123 60 30.5Z" />
+              <a target="_self" style="text-decoration: none" href="/">
+                <svg
+                  height="35"
+                  viewBox="0 0 100 61"
+                  fill="#fff"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M100 30.5C100.002 40.5513 95.0431 49.946 86.7695 55.5645C78.4958 61.183 67.9905 62.2901 58.7417 58.518C61.1912 55.9731 63.2956 53.1128 65 50.0116C73.0955 52.1093 81.6321 48.9141 86.4037 42.0005C91.1753 35.0868 91.1753 25.9131 86.4037 18.9995C81.6321 12.0858 73.0955 8.89069 65 10.9884C63.2947 7.88705 61.1894 5.02674 58.7389 2.48196C67.988 -1.29129 78.4943 -0.184868 86.7687 5.43382C95.0431 11.0525 100.003 20.4479 100 30.5Z"
+                  />
+                  <path
+                    d="M80 30.5C80 36.0634 75.5228 40.5734 70 40.5734C69.5849 40.5743 69.1701 40.5481 68.7583 40.495C69.1727 38.8638 69.4835 37.2077 69.6889 35.5367C69.7944 34.7028 69.8722 33.8634 69.9222 33.0183H70C71.3807 33.0183 72.5 31.8908 72.5 30.5C72.5 29.1091 71.3807 27.9816 70 27.9816H69.9222C69.8722 27.1347 69.7944 26.2953 69.6889 25.4633C69.4835 23.7923 69.1727 22.1362 68.7583 20.5049C69.1701 20.4519 69.5849 20.4257 70 20.4266C75.5228 20.4266 80 24.9366 80 30.5Z"
+                  />
+                  <path
+                    d="M60 30.5C59.9914 43.7772 51.3755 55.4914 38.7688 59.3662C26.1621 63.2409 12.5218 58.3672 5.15656 47.3564C-2.20872 36.3456 -1.57128 21.7806 6.72733 11.4655C15.0259 1.15034 29.039 -2.49529 41.2583 2.48196C38.8088 5.02691 36.7044 7.88721 35 10.9884C26.9045 8.89069 18.3679 12.0858 13.5963 18.9995C8.82467 25.9131 8.82467 35.0868 13.5963 42.0005C18.3679 48.9141 26.9045 52.1093 35 50.0116C42.0437 48.1729 47.5442 42.6321 49.3694 35.5367H30.3111C30.2056 34.7028 30.1278 33.8634 30.0778 33.0183C30.0278 32.1733 30.0019 31.3338 30 30.5C30 29.6549 30.0259 28.8155 30.0778 27.9816C30.1296 27.1478 30.2074 26.3083 30.3111 25.4633H59.5833C59.8618 27.1275 60.0011 28.8123 60 30.5Z"
+                  />
                 </svg>
               </a>
             </div>
             <div class="navbar-links">
-              <a href="/cn4003-coursework/about" class="navlink">About Us</a>
-              <a href="/cn4003-coursework/support" class="navlink">Support</a>
-              <a href="/cn4003-coursework/download" class="navlink">Download</a>
-              <a href="/cn4003-coursework/shop" class="navlink">Shop</a>
-              <a href="/cn4003-coursework/partnerships" class="navlink">Partnerships</a>
+              <a href="/about.html" class="navlink">About Us</a>
+              <a href="/support.html" class="navlink">Support</a>
+              <a href="/download.html" class="navlink">Download</a>
+              <a href="/shop.html" class="navlink">Shop</a>
+              <a href="/partnerships.html" class="navlink">Partnerships</a>
             </div>
           </div>
         </div>
       </header>
-      <div 
-        style="padding-bottom: 200px;" 
-        class="content"
-      >
+      <div style="padding-bottom: 200px" class="content">
         <h1 class="page-title">Providing bicycles at a reasonable cost.</h1>
-        <p class="page-subtitle">GeoDo Bicycles is providing service across the City of London.</p>
+        <p class="page-subtitle">
+          GeoDo Bicycles is providing service across the City of London.
+        </p>
         <!-- Make sure to fix link to image -->
-        <img src="./assets/bike-wall.jpg" class="bike-wall" alt="Bike on a wall"/>
+        <img
+          src="./assets/bike-wall.jpg"
+          class="bike-wall"
+          alt="Bike on a wall"
+        />
       </div>
       <footer class="footer">
         <div class="footer-wrapper centerise">
           <div class="footer-content">
             <div class="footer-column">
               <a href="/">
-                <svg height="50" viewBox="0 0 100 61" fill="#fff" style="margin-bottom: 30px;" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M100 30.5C100.002 40.5513 95.0431 49.946 86.7695 55.5645C78.4958 61.183 67.9905 62.2901 58.7417 58.518C61.1912 55.9731 63.2956 53.1128 65 50.0116C73.0955 52.1093 81.6321 48.9141 86.4037 42.0005C91.1753 35.0868 91.1753 25.9131 86.4037 18.9995C81.6321 12.0858 73.0955 8.89069 65 10.9884C63.2947 7.88705 61.1894 5.02674 58.7389 2.48196C67.988 -1.29129 78.4943 -0.184868 86.7687 5.43382C95.0431 11.0525 100.003 20.4479 100 30.5Z" />
-                  <path d="M80 30.5C80 36.0634 75.5228 40.5734 70 40.5734C69.5849 40.5743 69.1701 40.5481 68.7583 40.495C69.1727 38.8638 69.4835 37.2077 69.6889 35.5367C69.7944 34.7028 69.8722 33.8634 69.9222 33.0183H70C71.3807 33.0183 72.5 31.8908 72.5 30.5C72.5 29.1091 71.3807 27.9816 70 27.9816H69.9222C69.8722 27.1347 69.7944 26.2953 69.6889 25.4633C69.4835 23.7923 69.1727 22.1362 68.7583 20.5049C69.1701 20.4519 69.5849 20.4257 70 20.4266C75.5228 20.4266 80 24.9366 80 30.5Z" />
-                  <path d="M60 30.5C59.9914 43.7772 51.3755 55.4914 38.7688 59.3662C26.1621 63.2409 12.5218 58.3672 5.15656 47.3564C-2.20872 36.3456 -1.57128 21.7806 6.72733 11.4655C15.0259 1.15034 29.039 -2.49529 41.2583 2.48196C38.8088 5.02691 36.7044 7.88721 35 10.9884C26.9045 8.89069 18.3679 12.0858 13.5963 18.9995C8.82467 25.9131 8.82467 35.0868 13.5963 42.0005C18.3679 48.9141 26.9045 52.1093 35 50.0116C42.0437 48.1729 47.5442 42.6321 49.3694 35.5367H30.3111C30.2056 34.7028 30.1278 33.8634 30.0778 33.0183C30.0278 32.1733 30.0019 31.3338 30 30.5C30 29.6549 30.0259 28.8155 30.0778 27.9816C30.1296 27.1478 30.2074 26.3083 30.3111 25.4633H59.5833C59.8618 27.1275 60.0011 28.8123 60 30.5Z" />
+                <svg
+                  height="50"
+                  viewBox="0 0 100 61"
+                  fill="#fff"
+                  style="margin-bottom: 30px"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M100 30.5C100.002 40.5513 95.0431 49.946 86.7695 55.5645C78.4958 61.183 67.9905 62.2901 58.7417 58.518C61.1912 55.9731 63.2956 53.1128 65 50.0116C73.0955 52.1093 81.6321 48.9141 86.4037 42.0005C91.1753 35.0868 91.1753 25.9131 86.4037 18.9995C81.6321 12.0858 73.0955 8.89069 65 10.9884C63.2947 7.88705 61.1894 5.02674 58.7389 2.48196C67.988 -1.29129 78.4943 -0.184868 86.7687 5.43382C95.0431 11.0525 100.003 20.4479 100 30.5Z"
+                  />
+                  <path
+                    d="M80 30.5C80 36.0634 75.5228 40.5734 70 40.5734C69.5849 40.5743 69.1701 40.5481 68.7583 40.495C69.1727 38.8638 69.4835 37.2077 69.6889 35.5367C69.7944 34.7028 69.8722 33.8634 69.9222 33.0183H70C71.3807 33.0183 72.5 31.8908 72.5 30.5C72.5 29.1091 71.3807 27.9816 70 27.9816H69.9222C69.8722 27.1347 69.7944 26.2953 69.6889 25.4633C69.4835 23.7923 69.1727 22.1362 68.7583 20.5049C69.1701 20.4519 69.5849 20.4257 70 20.4266C75.5228 20.4266 80 24.9366 80 30.5Z"
+                  />
+                  <path
+                    d="M60 30.5C59.9914 43.7772 51.3755 55.4914 38.7688 59.3662C26.1621 63.2409 12.5218 58.3672 5.15656 47.3564C-2.20872 36.3456 -1.57128 21.7806 6.72733 11.4655C15.0259 1.15034 29.039 -2.49529 41.2583 2.48196C38.8088 5.02691 36.7044 7.88721 35 10.9884C26.9045 8.89069 18.3679 12.0858 13.5963 18.9995C8.82467 25.9131 8.82467 35.0868 13.5963 42.0005C18.3679 48.9141 26.9045 52.1093 35 50.0116C42.0437 48.1729 47.5442 42.6321 49.3694 35.5367H30.3111C30.2056 34.7028 30.1278 33.8634 30.0778 33.0183C30.0278 32.1733 30.0019 31.3338 30 30.5C30 29.6549 30.0259 28.8155 30.0778 27.9816C30.1296 27.1478 30.2074 26.3083 30.3111 25.4633H59.5833C59.8618 27.1275 60.0011 28.8123 60 30.5Z"
+                  />
                 </svg>
               </a>
             </div>
             <div class="footer-column">
               <h3 class="footer-title">Have Suggestions?</h3>
-              <a href="/cn4003-coursework/404" class="footer-link">Report a bug</a>
-              <a href="/cn4003-coursework/404" class="footer-link footer-link-margin">Contact Us</a>
+              <a href="./404.html" class="footer-link">Report a bug</a>
+              <a href="./404.html" class="footer-link footer-link-margin"
+                >Contact Us</a
+              >
             </div>
             <div class="footer-column">
               <h3 class="footer-title">Social Networks</h3>
-              <a href="/cn4003-coursework/404" class="footer-link">Follow us on Instagram</a>
-              <a href="/cn4003-coursework/404" class="footer-link footer-link-margin">Follow us on Twitter</a>
-              <a href="/cn4003-coursework/404" class="footer-link footer-link-margin">Follow us on Facebook</a>
+              <a href="./404.html" class="footer-link"
+                >Follow us on Instagram</a
+              >
+              <a href="./404.html" class="footer-link footer-link-margin"
+                >Follow us on Twitter</a
+              >
+              <a href="./404.html" class="footer-link footer-link-margin"
+                >Follow us on Facebook</a
+              >
             </div>
             <div class="footer-column">
               <h3 class="footer-title">GeoDo Bicycles</h3>
-              <a href="/cn4003-coursework/404" class="footer-link">How it started</a>
-              <a href="/cn4003-coursework/404" class="footer-link footer-link-margin">Apply for an internship</a>
+              <a href="./404.html" class="footer-link">How it started</a>
+              <a href="./404.html" class="footer-link footer-link-margin"
+                >Apply for an internship</a
+              >
             </div>
             <div class="footer-column">
               <h3 class="footer-title">Downloads</h3>
-              <a href="/cn4003-coursework/404" class="footer-link">iOS</a>
-              <a href="/cn4003-coursework/404" class="footer-link footer-link-margin">Android</a>
-              <a href="/cn4003-coursework/404" class="footer-link footer-link-margin">Web App</a>
+              <a href="./404.html" class="footer-link">iOS</a>
+              <a href="./404.html" class="footer-link footer-link-margin"
+                >Android</a
+              >
+              <a href="./404.html" class="footer-link footer-link-margin"
+                >Web App</a
+              >
             </div>
           </div>
           <div class="footer-legal">
