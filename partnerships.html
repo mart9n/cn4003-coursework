@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <title>Partnerships – GeoDo Bicycles</title>
 
-    <link rel="stylesheet" href="/assets/styles.css" />
-    <link rel="icon" type="image/png" href="/assets/favicon.png" />
+    <link rel="stylesheet" href="./assets/styles.css" />
+    <link rel="icon" type="image/png" href="./assets/favicon.png" />
   </head>
   <body>
     <div class="main">
@@ -16,7 +16,7 @@
               <a
                 target="_self"
                 style="text-decoration: none"
-                href="/"
+                href="./index.html"
               >
                 <svg
                   height="35"
@@ -37,11 +37,11 @@
               </a>
             </div>
             <div class="navbar-links">
-              <a href="/about.html" class="navlink">About Us</a>
-              <a href="/support.html" class="navlink">Support</a>
-              <a href="/download.html" class="navlink">Download</a>
-              <a href="/shop.html" class="navlink">Shop</a>
-              <a href="/partnerships.html" class="navlink navlink-selected"
+              <a href="./about.html" class="navlink">About Us</a>
+              <a href="./support.html" class="navlink">Support</a>
+              <a href="./download.html" class="navlink">Download</a>
+              <a href="./shop.html" class="navlink">Shop</a>
+              <a href="./partnerships.html" class="navlink navlink-selected"
                 >Partnerships</a
               >
             </div>
@@ -56,15 +56,30 @@
           Please fill the following form and we will get back to you within 24 hours.
         </p>
         <div class="contact-form">
-          <form>
-            <label for="first_name">First Name</label>
-            <input type="text" id="first_name" name="first_name">
-            <label for="surname">Surname</label>
-            <input type="text" id="surname" name="surname">
-            <label for="email">Email</label>
-            <input type="text" id="email" name="email">
-            <label for="number">Phone Number</label>
-            <input type="number" id="number" name="number">
+          <form action="#">
+            <fieldset class="form-row">
+              <label for="first_name">First Name *</label>
+              <br/>
+              <input type="text" required id="first_name" name="first_name">
+            </fieldset>
+            <fieldset class="form-row">
+              <label for="last_name">Last Name *</label>
+              <br/>
+              <input type="text" required id="last_name" name="last_name">
+            </fieldset>
+            <fieldset class="form-row">
+              <label for="email">Email *</label>
+              <br/>
+              <input type="email" required id="email" name="email">
+            </fieldset>
+            <fieldset class="form-row">
+              <label for="number">Phone Number *</label>
+              <br/>
+              <input type="text" required id="number" name="number">
+            </fieldset>
+            <fieldset class="form-row">
+              <input type="button" value="Submit">
+            </fieldset>
           </form>
         </div>
       </div>
@@ -72,7 +87,7 @@
         <div class="footer-wrapper centerise">
           <div class="footer-content">
             <div class="footer-column">
-              <a href="/">
+              <a href="./index.html">
                 <svg
                   height="50"
                   viewBox="0 0 100 61"
@@ -94,35 +109,35 @@
             </div>
             <div class="footer-column">
               <h3 class="footer-title">Have Suggestions?</h3>
-              <a href="/404.html" class="footer-link">Report a bug</a>
-              <a href="/404.html" class="footer-link footer-link-margin"
+              <a href="./404.html" class="footer-link">Report a bug</a>
+              <a href="./404.html" class="footer-link footer-link-margin"
                 >Contact Us</a
               >
             </div>
             <div class="footer-column">
               <h3 class="footer-title">Social Networks</h3>
-              <a href="/404.html" class="footer-link">Follow us on Instagram</a>
-              <a href="/404.html" class="footer-link footer-link-margin"
+              <a href="./404.html" class="footer-link">Follow us on Instagram</a>
+              <a href="./404.html" class="footer-link footer-link-margin"
                 >Follow us on Twitter</a
               >
-              <a href="/404.html" class="footer-link footer-link-margin"
+              <a href="./404.html" class="footer-link footer-link-margin"
                 >Follow us on Facebook</a
               >
             </div>
             <div class="footer-column">
               <h3 class="footer-title">GeoDo Bicycles</h3>
-              <a href="/404.html" class="footer-link">How it started</a>
-              <a href="/404.html" class="footer-link footer-link-margin"
+              <a href="./404.html" class="footer-link">How it started</a>
+              <a href="./404.html" class="footer-link footer-link-margin"
                 >Apply for an internship</a
               >
             </div>
             <div class="footer-column">
               <h3 class="footer-title">Downloads</h3>
-              <a href="/404.html" class="footer-link">iOS</a>
-              <a href="/404.html" class="footer-link footer-link-margin"
+              <a href="./404.html" class="footer-link">iOS</a>
+              <a href="./404.html" class="footer-link footer-link-margin"
                 >Android</a
               >
-              <a href="/404.html" class="footer-link footer-link-margin"
+              <a href="./404.html" class="footer-link footer-link-margin"
                 >Web App</a
               >
             </div>
@@ -138,6 +153,6 @@
         </div>
       </footer>
     </div>
-    <script src="/scripts/script.js"></script>
+    <script src="./scripts/script.js"></script>
   </body>
 </html>
